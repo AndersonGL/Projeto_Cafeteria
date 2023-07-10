@@ -1,7 +1,23 @@
 @charset "UTF-8";
 
+/*configuração global */
+
 * {
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
+}
+
+.container-topo {
+  
+ width: 100%;
+ position: fixed;
+ z-index: 1;
+
+}
+
+.container-banner {
+
+    height: 100vh;
+    background-image: url(/img/parallax-imagem1.png);
 }
