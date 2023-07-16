@@ -57,7 +57,7 @@
 }
 
 .container-parallax1 h1 {
-    top: 45%;
+    top: 60%;
     right: 0;
     left: 0;
     position: absolute;
@@ -65,7 +65,7 @@
     text-align: center;
     font-weight: 400;
     font-family: "Fraunces", serif;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 /* Container Parallax 2 */
@@ -138,7 +138,7 @@
 }
 
 .container-contatos {
-    width: 500px;
+    width: 100%;
     padding: 10px;
     position: absolute;
     bottom: 8%;
@@ -153,6 +153,7 @@
     font-family: "Oswald", sans-serif;
     line-height: 36px;
     text-shadow: 0px 6px 8px #000000;
+    text-align: center;
     
 }
 
@@ -219,11 +220,13 @@
 
 .lista-horarios li { /* tag <li> */
     position: relative;
+   
 }
 
 .lista-horarios li h3 { /* subtitulo = <h3> */
     margin-bottom: 20px;
     color: #ACACAC;
+ 
 }
 
 .lista-horarios li div { /* tarja = <div> */
