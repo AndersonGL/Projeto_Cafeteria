@@ -303,7 +303,8 @@
     bottom: 0px;
 }
 .topo div a {
-    margin-right: 20px;
+
+    margin-left: 0px;
     font-size: 12px;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
