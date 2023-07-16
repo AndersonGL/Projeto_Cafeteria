@@ -141,7 +141,7 @@
     width: 100%;
     padding: 10px;
     position: absolute;
-    bottom: 8%;
+    bottom: 1%;
     right: 0;
     left: 0;
     margin: auto;
@@ -198,7 +198,7 @@
 .container-parallax5 h2 {
     position: absolute;
     margin: 0 auto;
-    top: 8%;
+    top: 1%;
     right: 0;
     left: 0;
     font-family: "Oswald", sans-serif;
