@@ -304,13 +304,13 @@
 }
 .topo div a {
 
-    margin-left: 0px;
-    font-size: 11px;
+    margin-right: 10px;
+    font-size: 16px;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     text-decoration: none;
     text-shadow: 3px 5px 2px #000000;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: #c4a47c;
 }
    
