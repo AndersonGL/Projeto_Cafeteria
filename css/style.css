@@ -14,6 +14,8 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
+
 }
 
 /* Topo da página */
@@ -43,7 +45,7 @@
     font-weight: 700;
     text-decoration: none;
     text-shadow: 3px 5px 2px #000000;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: #c4a47c;
 }
 
@@ -51,6 +53,7 @@
 .container-parallax1 {
     background-image: url("/assets/parallax-imagem1.png");
     height: 100vh;
+    width: 100%;
 }
 
 .container-parallax1 h1 {
@@ -69,6 +72,7 @@
 .container-parallax2 {
     background-image: url("/assets/parallax-imagem2.jpg");
     height: 50vh;
+    width: 100%;
 }
 
 .container-parallax3
@@ -105,6 +109,7 @@
 .container-parallax4 {
     background-image: url("/assets/parallax-imagem4.png");
     height: 100vh;
+    width: 100%;
 }
 
 .container-parallax4 h2 {
@@ -125,10 +130,11 @@
 
 .container-parallax4 iframe {
     position: absolute;
+    width: 100%;
     top: 23%;
     left: 0;
     right: 0;
-    margin: auto;
+    margin:auto;
 }
 
 .container-contatos {
@@ -278,16 +284,38 @@
     border-radius: 4px;
 }
 
-@media (max-width: 480px)
+@media (max-width: 900px) 
 {
- 
+    
 
    .container-parallax1 h1 {
 
    
    font-size: xx-large;
+   width: 100%;
 
    }
-
+   .topo img {
+    
+    height: -40px;
+    position: relative;
+    left: 0%;
+    bottom: 0px;
 }
+.topo div a {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 3px 5px 2px #000000;
+    letter-spacing: -1px;
+    color: #c4a47c;
+}
+   
+}
+
+ 
+
+
 
