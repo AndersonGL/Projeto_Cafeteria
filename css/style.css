@@ -1,4 +1,5 @@
- /* Reset e Globais */
+ 
+/* Reset e Globais */
 * {
   margin: 0;
   padding: 0;
@@ -309,6 +310,5 @@
     background-attachment: scroll;
   }
 }
-
 
 
