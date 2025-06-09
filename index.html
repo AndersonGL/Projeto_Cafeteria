@@ -4,22 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cafeteria</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Fraunces:ital,wght@0,400;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- TOPO -->
+  <!-- TOPO DA PÁGINA -->
   <header class="topo">
-    <img src="/assets/logo.png" alt="Logo da Cafeteria" />
-    <nav>
-      <div>
-        <a href="#sobre">Sobre</a>
-        <a href="#cardapio">Cardápio</a>
-        <a href="#localizacao">Localização</a>
-        <a href="#contato">Contato</a>
-      </div>
-    </nav>
+    <img src="/assets/logo.png" alt="Logo da cafeteria" />
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Menu</a>
+      <a href="#">Contato</a>
+    </div>
   </header>
 
   <!-- PARALLAX 1 -->
@@ -27,36 +25,39 @@
     <h1>Aqui o café é na pausa</h1>
   </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="container-texto">
-    <h2>Sobre nós</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-  </section>
-
   <!-- PARALLAX 2 -->
   <section class="container-parallax2"></section>
 
-  <!-- FRASE -->
+  <!-- PARALLAX 3 -->
   <section class="container-parallax3">
-    <h3>“O amor está no ar e cheira a café.”</h3>
+    <h3>"O amor está no ar e cheira a café"</h3>
   </section>
 
-  <!-- PARALLAX 4: Localização -->
-  <section id="localizacao" class="container-parallax4">
+  <!-- PARALLAX 4 - LOCALIZAÇÃO -->
+  <section class="container-parallax4">
     <h2>Onde estamos</h2>
-    <iframe src="https://www.google.com/maps/embed?..." frameborder="0" allowfullscreen loading="lazy"></iframe>
-    <div id="contato" class="container-contatos">
+    <iframe 
+      src="https://www.google.com/maps/embed?..." 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="container-contatos">
       <p>Tel: (00) 0000-0000 | Email: contato@cafeteria.com.br</p>
     </div>
   </section>
 
-  <!-- TEXTO ADICIONAL -->
-  <section id="cardapio" class="container-texto">
-    <h2>Nosso Cardápio</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, justo non posuere hendrerit, nulla sapien accumsan elit.</p>
+  <!-- TEXTO INFORMATIVO -->
+  <section class="container-texto">
+    <h2>Sobre a Cafeteria</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum erat ac leo ullamcorper, et iaculis metus rhoncus. Vivamus id lacus at magna laoreet ultrices.</p>
   </section>
 
-  <!-- PARALLAX 5: Horários -->
+  <!-- PARALLAX 5 - HORÁRIOS -->
   <section class="container-parallax5">
     <h2>Horários</h2>
     <ul class="lista-horarios">
