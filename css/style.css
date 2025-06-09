@@ -5,18 +5,15 @@
   box-sizing: border-box;
 }
 
-/* Seções Parallax */
 .container-parallax1,
 .container-parallax2,
 .container-parallax3,
 .container-parallax4,
 .container-parallax5 {
-  position: relative;
-  background-position: center;
-  background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Topo fixo com layout responsivo */
