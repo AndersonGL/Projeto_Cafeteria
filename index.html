@@ -1,78 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manhattan - Coffee House</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="assets/logo.ico" />
-  <script>
-    window.addEventListener('scroll', () => {
-      const btn = document.querySelector('#btn-top');
-      if (window.scrollY > 300) {
-        btn.style.display = 'block';
-      } else {
-        btn.style.display = 'none';
-      }
-    });
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-</head>
-<body>
-  <header class="topo">
-    <img src="assets/logo.png" alt="logomarca" />
-    <nav>
-      <a href="#informacoes">INFORMAÇÕES</a>
-      <a href="#contatos">CONTATOS</a>
-      <a href="#horarios">HORÁRIOS</a>
-    </nav>
-  </header>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="cafeteria, café gourmet, café especial, Manhattan Coffee House, cafeteria Rio de Janeiro"
+    />
+    <meta
+      name="description"
+      content="Manhattan Coffee House - Experimente o melhor café gourmet do Rio de Janeiro, com grãos selecionados e ambiente acolhedor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <title>Manhattan - Coffee House</title>
+  </head>
+  <body>
+    <header class="topo">
+      <img
+        class="imagem"
+        src="img/logo.png"
+        alt="Logo da Manhattan Coffee House"
+      />
+      <a href="#informacoes">Informações</a>
+      <a href="#contatos">Contatos</a>
+      <a href="#horarios">Horários</a>
+    </header>
 
-  <section class="parallax banner">
-    <h1>MANHATTAN - COFFEE HOUSE</h1>
-  </section>
+    <section class="banner" id="banner">
+      <h1>MANHATTAN - COFFEE HOUSE</h1>
+    </section>
 
-  <section class="container-texto" id="informacoes">
-    <h2>EXPERIMENTE O MELHOR CAFÉ DA CIDADE!</h2>
-    <p>O café não é uma simples bebida... Aqui na Manhattan serviremos para você com muito carinho o nosso querido e amado Amaros Coffe.</p>
-  </section>
+    <section id="informacoes">
+      <div class="texto CARD-ZERO">
+        <h2 class="card-text">EXPERIMENTE O MELHOR CAFÉ DA CIDADE!</h2>
+        <p>
+          O café não é uma simples bebida que foi preparada por alguém. O café é
+          momento e nós mostraremos isso. Frases como “Que tal tomarmos um
+          café?” ou até então “Vamos fazer um café?” são demonstrações de que um
+          dos momentos que mais reforçam os laços para com o próximo está
+          finalmente por acontecer. Fraco ou forte? Com ou sem açúcar? Você
+          deseja açúcar ou adoçante? Estas são frases que ouvimos em vários
+          lugares. Em quase todos os locais onde há pessoas há também café.
+          Parecemos intrínsecos ao café. Aqui na Manhattan serviremos para você
+          com muito carinho o nosso querido e amado Amaros Coffe diretamente do
+          nosso cafezal em Minas Gerais. Para todos nós, café é coisa séria e
+          merece todo o cuidado.
+        </p>
+      </div>
+      <div class="card-um">
+        <h3 class="um">Um bom café é motivo de alegria!</h3>
+      </div>
+      <div class="texto card-dois">
+        <h2 class="card-text">O QUE É O CAFÉ MANHATTAN?</h2>
+        <p>
+          Segundo a Metodologia de Avaliação Sensorial da SCA (Specialty Coffee
+          Association), usada no mundo todo, um café especial é todo aquele que
+          atinge, no mínimo, 80 pontos na escala de pontuação da metodologia
+          (que vai até 100). O Café Manhattan destaca-se nos atributos
+          fragrância, corpo, harmonia, doçura e sabor, nesse caso, possuindo
+          sabores e aromas que podem ser frutados, herbais, doces como caramelo
+          e chocolate. Podemos fazer uma analogia com o vinho, pois o café
+          Manhattan também pode ser apreciado por suas características
+          sensoriais e não apenas pela cafeína. Através do excelente padrão de
+          cultivo, cuidado pós-colheita e da torra, você poderá experimentar
+          diferentes e deliciosos tipos de café.
+        </p>
+      </div>
+      <div class="card-tres">
+        <h3>A vida só começa depois do café!</h3>
+      </div>
+      <div class="texto card-quatro">
+        <h2 class="card-text">CONHEÇA O CAFÉ GOURMET MANHATTAN</h2>
+        <p>
+          As características desse tipo do café gourmet da Manhattan são muito
+          marcantes. O seu corpo vai depender da variedade do blend: quanto mais
+          “pesado” ele for na boca, maior o corpo. Quanto menor a sua pesagem,
+          menor o corpo. O nosso café gourmet é o mais bem avaliado no processo
+          de produção, para que ele não venha com nenhum tipo de defeito. O
+          aroma é bem perceptível e o consumidor consegue sentir nitidamente,
+          sendo que ele pode variar entre 4 aromas: florado, cítrico,
+          achocolatado, frutado. Essas variações são consequências dos grãos do
+          tipo Arábica. Tudo isso vai depender da torra, quanto mais clara ela
+          for, maior será a acidez.
+        </p>
+      </div>
+    </section>
 
-  <section class="parallax info"></section>
-
-  <section class="container-texto">
-    <h2>O QUE É O CAFÉ MANHATTAN?</h2>
-    <p>Segundo a Metodologia da SCA... sabores e aromas como caramelo, chocolate e frutados.</p>
-  </section>
-
-  <section class="parallax gourmet"></section>
-
-  <section class="container-texto">
-    <h2>CONHEÇA O CAFÉ GOURMET MANHATTAN</h2>
-    <p>As características desse café são muito marcantes... com aromas florais, cítricos, achocolatados e frutados.</p>
-  </section>
-
-  <section class="parallax mapa" id="contatos">
-    <div class="overlay">
+    <section class="contato" id="contatos">
       <h2>Contatos & Endereço</h2>
-      <p>Telefone: (11) 99999-5555 | Email: contato@manhattan.com.br</p>
-      <p>Endereço: Av Francisco Monteiro, 38 - Ribeirão Pires - SP</p>
-    </div>
-  </section>
+      <iframe
+        class="inframe-id"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1177241914506!2d-43.364032585032966!3d-22.98269808497323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ec9620a2d%3A0x5c8412e8969fa343!2sDevMedia!5e0!3m2!1spt-BR!2sbr!4v1677112824195!5m2!1spt-BR!2sbr"
+        frameborder="0"
+        width="1024"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa de localização da Manhattan Coffee House"
+      ></iframe>
+      <div class="Box-contatos">
+        <p>Telefone & Whatsapp: (21) 99999-5555</p>
+        <p>E-mail: contato@manhattan.com.br</p>
+        <p>
+          Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro
+        </p>
+      </div>
+    </section>
 
-  <section class="container-texto" id="horarios">
-    <h2>HORÁRIOS DE FUNCIONAMENTO</h2>
-    <ul class="lista-horarios">
-      <li><strong>SEG:</strong> FECHADO</li>
-      <li><strong>TER - SEX:</strong> 09:00 - 22:00</li>
-      <li><strong>SÁB - DOM:</strong> 12:00 - 22:00</li>
-    </ul>
-  </section>
-
-  <footer class="rodape">
-    <p>&copy; 2025 Manhattan - Coffee House</p>
-    <button id="btn-top" onclick="scrollToTop()">↑</button>
-  </footer>
-</body>
+    <section class="horarios" id="horarios">
+      <h2 class="text-horario">Horários de funcionamento</h2>
+      <ul class="listas">
+        <li>
+          <strong>Segunda</strong>
+          <p>Fechado</p>
+        </li>
+        <li>
+          <strong>Terça</strong>
+          <p>09:00 - 22:00</p>
+        </li>
+        <li>
+          <strong>Quarta</strong>
+          <p>09:00 - 22:00</p>
+        </li>
+        <li>
+          <strong>Quinta</strong>
+          <p>09:00 - 22:00</p>
+        </li>
+        <li>
+          <strong>Sexta</strong>
+          <p>09:00 - 22:00</p>
+        </li>
+        <li>
+          <strong>Sábado</strong>
+          <p>12:00 - 22:00</p>
+        </li>
+        <li>
+          <strong>Domingo</strong>
+          <p>12:00 - 22:00</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="rodape">
+      <p>&copy; Manhattan - Coffee House - Todos os direitos reservados</p>
+      <p>Desenvolvido por <span>Anderson Gouveia Lignelli</span></p>
+      <a href="#banner" aria-label="Voltar ao topo">
+        <img src="img/seta-para-cima.png" alt="Seta para voltar ao topo" />
+      </a>
+    </footer>
+  </body>
 </html>
