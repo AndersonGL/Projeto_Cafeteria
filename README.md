@@ -1,55 +1,48 @@
-Manhattan Coffee House - Site
-Site institucional responsivo para a Cafeteria Manhattan
+📌 Projeto: Manhattan - Coffee House
+Descrição:
+Este é um site institucional para a cafeteria Manhattan - Coffee House, desenvolvido com foco em responsividade, estética moderna e navegação fluida. O projeto destaca informações essenciais sobre a cafeteria, incluindo localização, horário de funcionamento, contato e missão da marca.
 
-Descrição
-Este projeto consiste em uma página web simples, porém estilizada, para divulgar a cafeteria Manhattan Coffee House. O layout utiliza imagens de fundo com efeito paralaxe, fontes personalizadas do Google Fonts e design responsivo para dispositivos móveis.
-
-Funcionalidades
-Menu fixo no topo para navegação
-
-Seções com texto descritivo sobre o café e a cafeteria.
-
-Mapa do Google Maps integrado para localização.
-
-Horários de funcionamento definidos de forma clara.
-
-Responsivo: adapte-se para telas peq
-
-Tecnologias utilizadas
+🚀 Tecnologias Utilizadas
 HTML5
 
-CSS3 (Flexbox, Consultas de Mídia)
+CSS3 (com design responsivo)
 
-Fontes do Google (Fraunces, Lato, Oswald)
+JavaScript (scroll suave, botão "voltar ao topo")
 
-API de incorporação do Google Maps
+Google Fonts
 
-Como usar
-Clonar este repositório:
+📁 Estrutura do Projeto
+bash
+Copy
+Edit
+📦 manhattan-coffee-house
+├── index.html
+├── style.css
+├── script.js
+├── /images
+│   ├── banner.jpg
+│   └── logo.png
+└── README.md
+🎯 Funcionalidades
+Layout responsivo para mobile, tablet e desktop
 
-festança
+Scroll suave entre seções
 
-Cópia
+Botão "voltar ao topo"
 
-Editar
-git clone https://github.com/seu-usuario/manhattan-coffee-house.git
-Abra o arquivo index.htmlem qualquer navegador moderno.
+Design limpo com tipografia moderna
 
-Personalize como imagens e textos conforme a necessidade.
+🖼️ Preview
+Você pode visualizar o site abrindo o arquivo index.html em seu navegador ou acessando a demo hospedada (adicione o link, se disponível).
 
-Estrutu
-festança
+📌 Como Usar
+Clone o repositório:
 
-Cópia
+bash
+Copy
+Edit
+git clone https://github.com/usuario/manhattan-coffee-house.git
+Navegue até o diretório do projeto e abra index.html em um navegador.
 
-Editar
-/img # Imagens do site (logo, backgrounds, ícones)
-/index.html # Página principal HTML
-/style.css # Arquivo de estilos CSS
-README.md # Este arquivo de documentação
-Personalização
-Para alterar o mapa, substitua o link do iframe na seção "contatos" no index.html.
-
-Atualize as imagens na pasta /imgpara alterar o visual do site.
-
-Ajuste o CSS no arquivo style.csspara mudar núcleos, fontes e layout.
+📝 Licença
+Este projeto está licenciado sob a MIT License.
