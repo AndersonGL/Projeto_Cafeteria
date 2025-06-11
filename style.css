@@ -1,288 +1,148 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Topo fixo */
+body {
+  font-family: "Lato", sans-serif;
+  padding-top: 60px;
+  background: #fff;
+  color: #333;
+}
+
+/* Topo */
 .topo {
-  background-color: #604829;
-  height: 50px;
-  padding-left: 300px;
-  width: 100%;
+  background: #604829;
+  color: #c4a47c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
-  box-shadow: inset 1px 1px 23px 10px #3f2f19;
-  border-radius: 10px;
+  padding: 10px;
   z-index: 1000;
 }
 
+.topo img {
+  max-height: 40px;
+}
+
 .topo a {
-  position: relative;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  text-decoration: none;
   color: #c4a47c;
-  font-size: 20px;
-  margin-left: 20px;
-  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.topo .imagem {
-  position: absolute;
-  left: 140px;
-  top: 0;
-  max-height: 50px;
-  width: auto;
-}
-
-/* Banner */
 .banner {
   height: 100vh;
-  background-image: url(img/parallax-imagem1.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  font-size: smaller;
+  background: #222 url("img/parallax-imagem1.png") center/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .banner h1 {
-  font-size: 60px;
-  color: #fff;
-  font-family: "Fraunces", serif;
-  padding: 0 20px;
-  text-align: center;
-  text-shadow: 1px 1px 5px #000;
-}
-
-/* Cards */
-.card-um {
-  width: 100%;
-  height: 50vh;
-  background-image: url(img/parallax-imagem2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  position: relative;
-  text-align: center;
-  background-color: #604829;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-um h3 {
-  color: #fff;
-  background-color: #604829cc;
-  padding: 10px 30px;
-  border-radius: 1cm;
-  font-family: "Lato", sans-serif;
-  max-width: 30%;
-  margin: 0 auto;
-}
-
-.card-tres {
-  background-image: url(img/parallax-imagem3.jpg);
-  height: 30vw;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-tres h3 {
-  font-family: "Lato", sans-serif;
-  background-color: #604829cc;
-  padding: 10px 30px;
-  color: #fff;
-  border-radius: 1cm;
-  max-width: 30%;
-  text-align: center;
-}
-
-/* Textos explicativos */
-.texto {
-  color: #666;
-  padding: 80px 80px;
-  font-size: 16px;
-  line-height: 34px;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-}
-
-.card-text {
-  color: #c4a47c;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 20px;
-}
-
-/* Contato */
-.contato {
-  background-image: url(img/parallax-imagem4.png);
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  padding-top: 80px;
-}
-
-.contato h2 {
-  width: 500px;
-  padding: 10px 10px;
-  margin: 0 auto 20px;
-  font-size: 28px;
-  letter-spacing: 5px;
-  font-family: "Oswald", serif;
-  text-align: center;
   color: white;
-  background-color: #604829;
-  border-radius: 10px;
-  position: relative;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
 }
 
-/* Iframe mapa */
+.texto {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.card-um,
+.card-tres {
+  height: 40vh;
+  background: #444 url("img/parallax-imagem2.jpg") center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.contato {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
 .inframe-id {
-  height: 400px;
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
-  display: block;
-  opacity: 0.9;
+  width: 100%;
+  height: 300px;
   border: none;
-  border-radius: 10px;
-  position: relative;
-}
-
-/* Box contatos */
-.Box-contatos {
-  width: 400px;
-  margin: 30px auto;
-  background-color: #604829cc;
-  padding: 15px;
   border-radius: 8px;
-  font-family: "Lato", sans-serif;
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  line-height: 28px;
 }
 
-/* Horários */
+.Box-contatos {
+  margin-top: 20px;
+  padding: 20px;
+  background: #604829cc;
+  color: white;
+  border-radius: 8px;
+}
+
 .horarios {
-  padding: 80px 20px;
-  background-color: #f8f1e7;
-  text-align: center;
-}
-
-.text-horario {
-  font-family: "Oswald", serif;
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #604829;
-  letter-spacing: 2px;
+  background: #f8f1e7;
+  padding: 40px 20px;
 }
 
 .listas {
   list-style: none;
-  max-width: 600px;
-  margin: 0 auto;
   padding: 0;
-  font-family: "Lato", sans-serif;
 }
 
 .listas li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #c4a47c;
+  color: white;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  padding: 12px 20px;
-  background-color: #c4a47c;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 12px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.listas li strong {
-  font-weight: 700;
-}
-
-/* Rodapé */
 .rodape {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #604829;
+  background: #604829;
   color: #c4a47c;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
 .rodape span {
-  font-weight: 700;
-  color: #fff;
+  color: white;
 }
 
-.rodape a img {
+.rodape img {
   width: 30px;
-  margin-left: 10px;
-  vertical-align: middle;
-  cursor: pointer;
-  filter: invert(100%);
-  transition: filter 0.3s ease;
+  margin-top: 10px;
 }
 
-.rodape a img:hover {
-  filter: invert(65%) sepia(92%) saturate(746%) hue-rotate(280deg)
-    brightness(94%) contrast(89%);
-}
-
-/* Ajuste para o corpo respeitar topo fixo */
-body {
-  padding-top: 60px;
-  background-color: #fff;
-  color: #333;
-}
-
-/* Responsivo para o menu topo */
+/* Responsivo */
 @media (max-width: 768px) {
-  .topo {
-    padding-left: 20px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 20px;
-    border-radius: 0;
+  .banner h1 {
+    font-size: 1.8em;
+    padding: 0 10px;
   }
 
-  .topo .imagem {
-    position: static;
-    max-height: 40px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  .topo {
+    flex-direction: column;
   }
 
   .topo a {
-    font-size: 16px;
-    margin-left: 0;
-    padding: 8px 12px;
-    flex: 1 1 auto;
-    text-align: center;
-    color: #c4a47c;
-    white-space: nowrap;
+    margin: 5px 0;
+  }
+
+  .card-um,
+  .card-tres {
+    font-size: 1.2em;
+    padding: 20px;
   }
 }
