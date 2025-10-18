@@ -1,144 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="keywords"
-      content="cafeteria, café gourmet, café especial, Manhattan Coffee House, cafeteria Rio de Janeiro"
-    />
-    <meta
-      name="description"
-      content="Manhattan Coffee House - Experimente o melhor café gourmet do Rio de Janeiro, com grãos selecionados e ambiente acolhedor."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <title>Manhattan - Coffee House</title>
-  </head>
-  <body>
-    <header class="topo">
-      <img
-        class="imagem"
-        src="img/logo.png"
-        alt="Logo da Manhattan Coffee House"
-      />
-      <a href="#informacoes">Informações</a>
-      <a href="#contatos">Contatos</a>
-      <a href="#horarios">Horários</a>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Manhattan - Coffee House</title>
+  <meta name="description" content="Manhattan Coffee House - Experimente o melhor café gourmet do Rio de Janeiro, com grãos selecionados e ambiente acolhedor." />
+  <link rel="icon" href="img/logo.png" />
 
-    <section class="banner" id="banner">
-      <h1>MANHATTAN - COFFEE HOUSE</h1>
-    </section>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <section id="informacoes">
-      <div class="texto CARD-ZERO">
-        <h2 class="card-text">EXPERIMENTE O MELHOR CAFÉ DA CIDADE!</h2>
-        <p>
-          O café não é uma simples bebida que foi preparada por alguém. O café é
-          momento e nós mostraremos isso. Frases como “Que tal tomarmos um
-          café?” ou até então “Vamos fazer um café?” são demonstrações de que um
-          dos momentos que mais reforçam os laços para com o próximo está
-          finalmente por acontecer. Fraco ou forte? Com ou sem açúcar? Você
-          deseja açúcar ou adoçante? Estas são frases que ouvimos em vários
-          lugares. Em quase todos os locais onde há pessoas há também café.
-          Parecemos intrínsecos ao café. Aqui na Manhattan serviremos para você
-          com muito carinho o nosso querido e amado Amaros Coffe diretamente do
-          nosso cafezal em Minas Gerais. Para todos nós, café é coisa séria e
-          merece todo o cuidado.
-        </p>
-      </div>
-      <div class="card-um">
-        <h3 class="um">Um bom café é motivo de alegria!</h3>
-      </div>
-      <div class="texto card-dois">
-        <h2 class="card-text">O QUE É O CAFÉ MANHATTAN?</h2>
-        <p>
-          Segundo a Metodologia de Avaliação Sensorial da SCA (Specialty Coffee
-          Association), usada no mundo todo, um café especial é todo aquele que
-          atinge, no mínimo, 80 pontos na escala de pontuação da metodologia
-          (que vai até 100). O Café Manhattan destaca-se nos atributos
-          fragrância, corpo, harmonia, doçura e sabor, nesse caso, possuindo
-          sabores e aromas que podem ser frutados, herbais, doces como caramelo
-          e chocolate. Podemos fazer uma analogia com o vinho, pois o café
-          Manhattan também pode ser apreciado por suas características
-          sensoriais e não apenas pela cafeína. Através do excelente padrão de
-          cultivo, cuidado pós-colheita e da torra, você poderá experimentar
-          diferentes e deliciosos tipos de café.
-        </p>
-      </div>
-      <div class="card-tres">
-        <h3>A vida só começa depois do café!</h3>
-      </div>
-      <div class="texto card-quatro">
-        <h2 class="card-text">CONHEÇA O CAFÉ GOURMET MANHATTAN</h2>
-        <p>
-          As características desse tipo do café gourmet da Manhattan são muito
-          marcantes. O seu corpo vai depender da variedade do blend: quanto mais
-          “pesado” ele for na boca, maior o corpo. Quanto menor a sua pesagem,
-          menor o corpo. O nosso café gourmet é o mais bem avaliado no processo
-          de produção, para que ele não venha com nenhum tipo de defeito. O
-          aroma é bem perceptível e o consumidor consegue sentir nitidamente,
-          sendo que ele pode variar entre 4 aromas: florado, cítrico,
-          achocolatado, frutado. Essas variações são consequências dos grãos do
-          tipo Arábica. Tudo isso vai depender da torra, quanto mais clara ela
-          for, maior será a acidez.
-        </p>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#banner" aria-label="Manhattan Coffee House - voltar ao topo">
+        <img src="img/logo.png" alt="Logo Manhattan Coffee House" />
+        <span class="brand-text">Manhattan</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <button id="btn-menu" class="hamburger" aria-expanded="false" aria-controls="menu-list" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul id="menu-list" class="menu-list">
+          <li><a href="#informacoes">Informações</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+          <li><a href="#horarios">Horários</a></li>
+        </ul>
+
+        <a class="cta-desktop" href="#contatos" aria-label="Contato / WhatsApp">Fale Conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="banner" class="hero" role="region" aria-label="Banner principal">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>Manhattan <span class="accent">Coffee House</span></h1>
+          <p class="lead">O café é momento. Venha viver o seu com grãos selecionados e preparo artesanal.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#informacoes">Conheça nosso café</a>
+            <a class="btn outline" href="#contatos">Nosso endereço</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="contato" id="contatos">
-      <h2>Contatos & Endereço</h2>
-      <iframe
-        class="inframe-id"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1177241914506!2d-43.364032585032966!3d-22.98269808497323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ec9620a2d%3A0x5c8412e8969fa343!2sDevMedia!5e0!3m2!1spt-BR!2sbr!4v1677112824195!5m2!1spt-BR!2sbr"
-        frameborder="0"
-        width="1024"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Mapa de localização da Manhattan Coffee House"
-      ></iframe>
-      <div class="Box-contatos">
-        <p>Telefone & Whatsapp: (21) 99999-5555</p>
-        <p>E-mail: contato@manhattan.com.br</p>
-        <p>
-          Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro
-        </p>
+    <!-- Galeria de imagens -->
+    <section id="galeria" class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <h2 id="galeria-title">Nossa Galeria</h2>
+        <div class="gallery-grid" aria-live="polite">
+          <figure class="gallery-item" data-speed="-0.08"><img src="img/parallax-imagem1.png" alt="Ambiente do café 1" loading="lazy"></figure>
+          <figure class="gallery-item" data-speed="0.06"><img src="img/parallax-imagem2.jpg" alt="Ambiente do café 2" loading="lazy"></figure>
+          <figure class="gallery-item" data-speed="-0.04"><img src="img/parallax-imagem3.jpg" alt="Detalhe do café 3" loading="lazy"></figure>
+          <figure class="gallery-item" data-speed="0.08"><img src="img/parallax-imagem4.png" alt="Detalhe do café 4" loading="lazy"></figure>
+          <figure class="gallery-item" data-speed="0.03"><img src="img/cafeteria.png" alt="Fachada da cafeteria" loading="lazy"></figure>
+        </div>
       </div>
     </section>
 
-    <section class="horarios" id="horarios">
-      <h2 class="text-horario">Horários de funcionamento</h2>
-      <ul class="listas">
-        <li>
-          <strong>Seg:</strong>
-          <p>Fechado</p>
-        </li>
-        <li>
-          <strong>Ter a Sex:</strong>
-          <p>09:00 - 22:00</p>
-        </li>
-        <li>
-          <strong>Sáb e Dom:</strong>
-          <p>12:00 - 22:00</p>
-        </li>
-      </ul>
+    <!-- Lightbox (abre ao clicar nas imagens da galeria) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador de imagens">
+      <div class="lightbox__backdrop" data-close></div>
+      <div class="lightbox__content" role="document">
+        <button class="lightbox__close" aria-label="Fechar (Esc)">×</button>
+        <img class="lightbox__img" alt="" />
+        <p class="lightbox__caption" aria-hidden="true"></p>
+      </div>
+    </div>
+
+    <!-- Informações -->
+    <section id="informacoes" class="section" aria-labelledby="info-title">
+      <div class="container grid-two">
+        <article class="card card-text">
+          <h2 id="info-title">Experimente o melhor café da cidade</h2>
+          <p>
+            O café não é uma simples bebida — é um momento. Aqui na Manhattan servimos nosso amado Amaros Coffee, com grãos direto de Minas Gerais, torra cuidada e preparo feito com carinho. Seja para uma pausa, um encontro ou um novo ritual, queremos ser parte do seu momento.
+          </p>
+          <p>
+            Nossos cafés são avaliados pela SCA e apresentam notas destacadas em fragrância, corpo e sabor — variando entre florado, frutado e achocolatado, de acordo com o blend e a torra.
+          </p>
+        </article>
+
+        <aside class="card card-visual" aria-hidden="true">
+          <img src="img/parallax-imagem3.jpg" alt="Xícara de café" loading="lazy" />
+        </aside>
+      </div>
+
+      <div class="container highlights">
+        <div class="highlight">
+          <h3>Torra Artesanal</h3>
+          <p>Controlamos a torra para garantir aroma e corpo equilibrados.</p>
+        </div>
+        <div class="highlight">
+          <h3>Grãos Selecionados</h3>
+          <p>Blend Arábica com origem certificada e sabor consistente.</p>
+        </div>
+        <div class="highlight">
+          <h3>Ambiente Acolhedor</h3>
+          <p>Perfeito para trabalhar, encontrar amigos ou relaxar.</p>
+        </div>
+      </div>
     </section>
 
-    <footer class="rodape">
-      <p>&copy; Manhattan - Coffee House</p>
-      <p>Desenvolvido por <span>Anderson Gouveia Lignelli</span></p>
-      <a href="#banner"><img src="img/seta-para-cima.png" alt="Topo" /></a>
-    </footer>
-  </body>
+    <!-- Cards de frase -->
+    <section class="quote-strip" aria-hidden="true">
+      <div class="container">
+        <p>“Um bom café é motivo de alegria!”</p>
+      </div>
+    </section>
+
+    <!-- Contatos / Mapa -->
+    <section id="contatos" class="section section-muted" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Contatos & Endereço</h2>
+
+        <div class="map-wrapper">
+          <!-- iframe responsivo -->
+          <div class="iframe-container" aria-hidden="false">
+            <!-- Placeholder/skeleton mostrado até o iframe carregar -->
+            <div class="map-placeholder" role="status" aria-live="polite">
+              <div class="map-placeholder__content">
+                <div class="spinner" aria-hidden="true"></div>
+                <span class="map-placeholder__text">Carregando mapa…</span>
+              </div>
+            </div>
+            <iframe
+              title="Mapa de localização da Manhattan Coffee House"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1177241914506!2d-43.364032585032966!3d-22.98269808497323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ec9620a2d%3A0x5c8412e8969fa343!2sDevMedia!5e0!3m2!1spt-BR!2sbr!4v1677112824195!5m2!1spt-BR!2sbr"
+            ></iframe>
+          </div>
+
+          <div class="contact-box" role="contentinfo">
+            <p><strong>Telefone / WhatsApp:</strong> <a href="tel:+5521999995555">(21) 99999-5555</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:contato@manhattan.com.br">contato@manhattan.com.br</a></p>
+            <p><strong>Endereço:</strong> Av. Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
+            <a class="btn small" href="https://wa.me/5521999995555" target="_blank" rel="noopener">Abrir WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horários -->
+    <section id="horarios" class="section" aria-labelledby="horarios-title">
+      <div class="container">
+        <h2 id="horarios-title">Horários de funcionamento</h2>
+        <ul class="hours">
+          <li><strong>Seg:</strong> Fechado</li>
+          <li><strong>Ter a Sex:</strong> 09:00 - 22:00</li>
+          <li><strong>Sáb e Dom:</strong> 12:00 - 22:00</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    ↑
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> Manhattan - Coffee House</p>
+      <p>Desenvolvido por <strong>Anderson Gouveia Lignelli</strong></p>
+      <a class="top-link" href="#banner" aria-label="Ir ao topo"><img src="img/seta-para-cima.png" alt="Topo" /></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
 </html>
+
